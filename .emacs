@@ -13,6 +13,11 @@
 ;; Enable dead keys
 (require 'iso-transl)
 
+;; Highlight column 80
+(add-to-list 'load-path "~/.emacs.d/")
+(require 'column-marker)
+(add-hook 'find-file-hook (lambda () (interactive) (column-marker-1 80)))
+
 ;; Enable MELPA package archive for easy install of addons
 (require 'package)
 (add-to-list 'package-archives
