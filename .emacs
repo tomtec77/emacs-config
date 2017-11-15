@@ -10,6 +10,9 @@
 ;; Text highlighting always on
 (global-font-lock-mode 1)
 
+;; Enable dead keys
+(require 'iso-transl)
+
 ;; Enable MELPA package archive for easy install of addons
 (require 'package)
 (add-to-list 'package-archives
@@ -19,6 +22,8 @@
 ;; Package installations: M-x package-install RET, then the package name
 ;; - Markdown mode: markdown-mode
 ;;    See https://jblevins.org/projects/markdown-mode/
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
