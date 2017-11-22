@@ -18,6 +18,9 @@
 (require 'column-marker)
 (add-hook 'find-file-hook (lambda () (interactive) (column-marker-1 80)))
 
+;; Dimensions of the Emacs window: set width to 84 characters
+(add-to-list 'default-frame-alist '(width . 84))
+
 ;; Enable MELPA package archive for easy install of addons
 (require 'package)
 (add-to-list 'package-archives
