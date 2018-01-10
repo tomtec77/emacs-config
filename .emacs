@@ -21,6 +21,12 @@
 ;; Dimensions of the Emacs window: set width to 84 characters
 (add-to-list 'default-frame-alist '(width . 84))
 
+;; Python mode: enable auto indent
+(add-hook 'python-mode-hook 'my-python-hook)
+
+(defun my-python-hook ()
+  (define-key python-mode-map (kbd "RET") 'newline-and-indent))
+
 ;; Enable MELPA package archive for easy install of addons
 (require 'package)
 (add-to-list 'package-archives
