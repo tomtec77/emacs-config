@@ -1,9 +1,15 @@
 # My personal Emacs configuration
 
-Copy file `.emacs` to your `$HOME` directory, and all other files into the
-`$HOME/.emacs.d/` directory.
+Copy file `.emacs` to your `$HOME` directory, and all `.el` files into the
+`$HOME/.emacs.d/lisp` directory.
 
-Also create directory `$HOME/.emacs.d/lisp`.
+## Install packages with MELPA
+
+See https://melpa.org/#/getting-started
+
+Install:
+- markdown-mode
+- dockerfile-mode
 
 ## Additional files
 
